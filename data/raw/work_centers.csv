@@ -1,0 +1,4 @@
+work_center_id,description,capacity_hours_per_week,efficiency_factor,calendar_id
+WC-100,CNC Machining & Forming Center,160.0,0.95,CAL-STD-5D
+WC-200,Subassembly & Electronics SMT Line,120.0,0.9,CAL-STD-5D
+WC-300,Final Assembly & Systems Testing Cell,80.0,0.85,CAL-STD-5D

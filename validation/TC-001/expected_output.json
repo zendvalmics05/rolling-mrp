@@ -1,0 +1,60 @@
+{
+  "test_case_id": "TC-001",
+  "name": "Netting Logic Verification",
+  "periods": [1, 2, 3, 4],
+  "items": {
+    "FG-A": {
+      "initial_pab": 20.0,
+      "safety_stock": 10.0,
+      "lead_time": 1,
+      "gross_requirements": [15.0, 25.0, 20.0, 30.0],
+      "scheduled_receipts": [0.0, 0.0, 0.0, 0.0],
+      "projected_available_balance": [10.0, 10.0, 10.0, 10.0],
+      "net_requirements": [5.0, 25.0, 20.0, 30.0],
+      "planned_order_receipts": [5.0, 25.0, 20.0, 30.0],
+      "planned_order_releases": [
+        {"period": 0, "quantity": 5.0, "past_due": true},
+        {"period": 1, "quantity": 25.0, "past_due": false},
+        {"period": 2, "quantity": 20.0, "past_due": false},
+        {"period": 3, "quantity": 30.0, "past_due": false}
+      ]
+    },
+    "COMP-B": {
+      "initial_pab": 30.0,
+      "safety_stock": 15.0,
+      "lead_time": 1,
+      "gross_requirements": [50.0, 40.0, 60.0, 0.0],
+      "scheduled_receipts": [20.0, 0.0, 0.0, 0.0],
+      "projected_available_balance": [15.0, 15.0, 15.0, 15.0],
+      "net_requirements": [15.0, 40.0, 60.0, 0.0],
+      "planned_order_receipts": [15.0, 40.0, 60.0, 0.0],
+      "planned_order_releases": [
+        {"period": 0, "quantity": 15.0, "past_due": true},
+        {"period": 1, "quantity": 40.0, "past_due": false},
+        {"period": 2, "quantity": 60.0, "past_due": false}
+      ]
+    },
+    "COMP-C": {
+      "initial_pab": 10.0,
+      "safety_stock": 5.0,
+      "lead_time": 2,
+      "gross_requirements": [25.0, 20.0, 30.0, 0.0],
+      "scheduled_receipts": [0.0, 0.0, 0.0, 0.0],
+      "projected_available_balance": [5.0, 5.0, 5.0, 5.0],
+      "net_requirements": [20.0, 20.0, 30.0, 0.0],
+      "planned_order_receipts": [20.0, 20.0, 30.0, 0.0],
+      "planned_order_releases": [
+        {"period": -1, "quantity": 20.0, "past_due": true},
+        {"period": 0, "quantity": 20.0, "past_due": true},
+        {"period": 1, "quantity": 30.0, "past_due": false}
+      ]
+    }
+  },
+  "exceptions": [
+    {"item_id": "FG-A", "period_due": 1, "release_period": 0, "type": "expedite", "quantity": 5.0},
+    {"item_id": "COMP-B", "period_due": 1, "release_period": 0, "type": "expedite", "quantity": 15.0},
+    {"item_id": "COMP-C", "period_due": 1, "release_period": -1, "type": "expedite", "quantity": 20.0},
+    {"item_id": "COMP-C", "period_due": 2, "release_period": 0, "type": "expedite", "quantity": 20.0}
+  ]
+}
+

@@ -1,0 +1,5 @@
+frozen_length,mean_nervousness,std_nervousness,mean_cost,std_cost,mean_stockouts,stockout_frequency
+0,0.2429,0.0059,17063.91,514.5,212.68,1.0
+1,0.2412,0.0059,17185.29,411.61,219.84,1.0
+2,0.2423,0.006,22607.52,523.96,537.73,1.0
+4,0.2397,0.008,33254.82,836.5,1181.67,1.0

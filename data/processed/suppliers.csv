@@ -1,0 +1,5 @@
+supplier_id,name,reliability_score,quoted_lead_time_days,actual_lead_time_mean,actual_lead_time_stddev,fill_rate,quality_reject_rate
+SUP-01,Apex Precision Metalworks,0.98,7,7.1,0.6,0.99,0.01
+SUP-02,Global ElectroComponent Co,0.88,14,15.2,2.8,0.91,0.04
+SUP-03,FastTrack Polymers & Fasteners,0.94,5,5.2,0.9,0.96,0.02
+SUP-04,Budget Wholesale Raw Materials,0.74,10,13.5,4.2,0.8,0.08

@@ -1,0 +1,26 @@
+item_id,location_id,quantity_on_hand,quantity_allocated,quantity_on_order,expiration_date,type,description,safety_stock,standard_cost,lot_sizing_rule,lead_time_days,net_available_start,inventory_value
+FG-01,WH-MAIN,21.0,7.0,0.0,,finished_good,Industrial Robot Arm (Alpha),25.0,550.0,L4L,7,14.0,11550.0
+FG-02,WH-MAIN,37.0,5.0,0.0,,finished_good,Precision Actuator Module (Beta),30.0,420.0,L4L,7,32.0,15540.0
+FG-03,WH-MAIN,22.0,6.0,0.0,,finished_good,Conveyor Drive Unit (Gamma),20.0,610.0,L4L,7,16.0,13420.0
+FG-04,WH-MAIN,12.0,4.0,0.0,,finished_good,Automated Feeder Unit (Delta),15.0,380.0,L4L,7,8.0,4560.0
+FG-05,WH-MAIN,32.0,1.0,0.0,,finished_good,Smart Sensor Hub (Epsilon),35.0,290.0,EOQ,7,31.0,9280.0
+SA-01,WH-MAIN,30.0,9.0,20.0,,subassembly,Servo Motor Core Assembly,20.0,140.0,L4L,7,21.0,4200.0
+SA-02,WH-MAIN,25.0,5.0,0.0,,subassembly,Planetary Gearbox Reducer,15.0,115.0,POQ,7,20.0,2875.0
+SA-03,WH-MAIN,18.0,2.0,0.0,,subassembly,Structural Robotic Joint Frame,10.0,85.0,L4L,7,16.0,1530.0
+SA-04,WH-MAIN,29.0,11.0,20.0,,subassembly,Microcontroller Circuit Board Assembly,25.0,95.0,WAGNER_WHITIN,7,18.0,2755.0
+SA-05,WH-MAIN,21.0,5.0,0.0,,subassembly,Linear Motion Carriage,15.0,75.0,EOQ,7,16.0,1575.0
+SA-06,WH-MAIN,14.0,1.0,0.0,,subassembly,Heavy-Duty Base Mounting Plate,10.0,65.0,POQ,7,13.0,910.0
+SA-07,WH-MAIN,37.0,0.0,30.0,,subassembly,Power Inverter & Filter Unit,20.0,105.0,L4L,7,37.0,3885.0
+SA-08,WH-MAIN,19.0,4.0,20.0,,subassembly,Multi-Channel Optical Sensor Array,15.0,80.0,SILVER_MEAL,7,15.0,1520.0
+RM-01,WH-MAIN,211.0,10.0,100.0,,raw_material,CNC Machined Alloy Rod 6061,100.0,18.0,EOQ,7,201.0,3798.0
+RM-02,WH-MAIN,142.0,21.0,50.0,,raw_material,High-Grade Stainless Steel Plate,80.0,22.0,EOQ,7,121.0,3124.0
+RM-03,WH-MAIN,328.0,8.0,0.0,,raw_material,Hardened Steel Ball Bearings Pack,150.0,8.5,POQ,7,320.0,2788.0
+RM-04,WH-MAIN,221.0,1.0,0.0,,raw_material,SMD Microcontroller IC Chip,120.0,28.0,EOQ,14,220.0,6188.0
+RM-05,WH-MAIN,194.0,18.0,50.0,,raw_material,Power MOSFET Module,90.0,14.0,POQ,14,176.0,2716.0
+RM-06,WH-MAIN,419.0,72.0,0.0,,raw_material,Multi-Layer Ceramic Capacitors Reel,250.0,4.5,EOQ,14,347.0,1885.5
+RM-07,WH-MAIN,332.0,15.0,0.0,2027-12-31,raw_material,Engineering Thermoplastic Housing Resin,140.0,9.0,EOQ,5,317.0,2988.0
+RM-08,WH-MAIN,670.0,17.0,0.0,,raw_material,Precision Fastener Kit (M4/M6 Bolts),300.0,2.5,EOQ,5,653.0,1675.0
+RM-09,WH-MAIN,209.0,14.0,0.0,2027-12-31,raw_material,EPDM Rubber Sealing Gaskets,100.0,3.8,POQ,5,195.0,794.1999999999999
+RM-10,WH-MAIN,135.0,14.0,0.0,,raw_material,Industrial Copper Magnet Wire,70.0,16.5,EOQ,10,121.0,2227.5
+RM-11,WH-MAIN,84.0,14.0,50.0,,raw_material,Neodymium Rotor Magnets,60.0,19.5,POQ,10,70.0,1638.0
+RM-12,WH-MAIN,53.0,3.0,100.0,2027-12-31,raw_material,Silicone Thermal Conductive Paste,40.0,11.0,L4L,10,50.0,583.0

@@ -1,0 +1,25 @@
+{
+  "regression_total_cost": {
+    "slope_dollar_per_unit_ni": 10813729.5,
+    "marginal_cost_per_0_01_ni": 108137.3,
+    "r_squared": 0.5745,
+    "correlation": 0.7579
+  },
+  "regression_friction_cost": {
+    "slope_dollar_per_unit_ni": 10817476.37,
+    "marginal_cost_per_0_01_ni": 108174.76,
+    "r_squared": 0.5747,
+    "correlation": 0.7581
+  },
+  "nervousness_driver_shares_pct": {
+    "expedite_surcharges": 7.8,
+    "overtime_premiums": 23.9,
+    "cancellations_and_scrap": 68.4
+  },
+  "optimal_operating_point": {
+    "optimal_frozen_window_weeks": 4,
+    "optimal_nervousness_index": 0.2031,
+    "mean_total_operational_cost": 825918.27,
+    "tradeoff_rationale": "A 2-week frozen window minimizes total cost by eliminating short-term expedite churn while retaining agility in periods 3+ to avert stockouts."
+  }
+}

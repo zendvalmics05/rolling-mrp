@@ -1,0 +1,67 @@
+{
+  "test_case_id": "TC-002",
+  "name": "Multi-Level BOM Explosion & Pegging Traceability",
+  "periods": [1, 2, 3, 4, 5, 6],
+  "items": {
+    "FG-1": {
+      "level": 0,
+      "lead_time": 1,
+      "gross_requirements": [0.0, 20.0, 0.0, 40.0, 0.0, 50.0],
+      "net_requirements": [0.0, 20.0, 0.0, 40.0, 0.0, 50.0],
+      "planned_order_releases": [
+        {"period": 1, "quantity": 20.0, "pegged_to": [{"source": "MPS", "period": 2, "qty": 20.0}]},
+        {"period": 3, "quantity": 40.0, "pegged_to": [{"source": "MPS", "period": 4, "qty": 40.0}]},
+        {"period": 5, "quantity": 50.0, "pegged_to": [{"source": "MPS", "period": 6, "qty": 50.0}]}
+      ]
+    },
+    "SA-1": {
+      "level": 1,
+      "lead_time": 1,
+      "gross_requirements": [20.0, 0.0, 40.0, 0.0, 50.0, 0.0],
+      "net_requirements": [15.0, 0.0, 40.0, 0.0, 50.0, 0.0],
+      "planned_order_releases": [
+        {"period": 0, "quantity": 15.0, "pegged_to": [{"parent_item": "FG-1", "parent_period": 1, "qty": 15.0}]},
+        {"period": 2, "quantity": 40.0, "pegged_to": [{"parent_item": "FG-1", "parent_period": 3, "qty": 40.0}]},
+        {"period": 4, "quantity": 50.0, "pegged_to": [{"parent_item": "FG-1", "parent_period": 5, "qty": 50.0}]}
+      ]
+    },
+    "SA-2": {
+      "level": 1,
+      "lead_time": 1,
+      "gross_requirements": [40.0, 0.0, 80.0, 0.0, 100.0, 0.0],
+      "net_requirements": [20.0, 0.0, 80.0, 0.0, 100.0, 0.0],
+      "planned_order_releases": [
+        {"period": 0, "quantity": 20.0, "pegged_to": [{"parent_item": "FG-1", "parent_period": 1, "qty": 20.0}]},
+        {"period": 2, "quantity": 80.0, "pegged_to": [{"parent_item": "FG-1", "parent_period": 3, "qty": 80.0}]},
+        {"period": 4, "quantity": 100.0, "pegged_to": [{"parent_item": "FG-1", "parent_period": 5, "qty": 100.0}]}
+      ]
+    },
+    "RM-1": {
+      "level": 2,
+      "lead_time": 2,
+      "gross_requirements": [0.0, 160.0, 0.0, 200.0, 0.0, 0.0],
+      "net_requirements": [0.0, 130.0, 0.0, 200.0, 0.0, 0.0],
+      "planned_order_releases": [
+        {"period": 0, "quantity": 130.0, "pegged_to": [
+          {"parent_item": "SA-1", "parent_period": 2, "qty": 65.0},
+          {"parent_item": "SA-2", "parent_period": 2, "qty": 65.0}
+        ]},
+        {"period": 2, "quantity": 200.0, "pegged_to": [
+          {"parent_item": "SA-1", "parent_period": 4, "qty": 100.0},
+          {"parent_item": "SA-2", "parent_period": 4, "qty": 100.0}
+        ]}
+      ]
+    },
+    "RM-2": {
+      "level": 2,
+      "lead_time": 1,
+      "gross_requirements": [0.0, 240.0, 0.0, 300.0, 0.0, 0.0],
+      "net_requirements": [0.0, 220.0, 0.0, 300.0, 0.0, 0.0],
+      "planned_order_releases": [
+        {"period": 1, "quantity": 220.0, "pegged_to": [{"parent_item": "SA-2", "parent_period": 2, "qty": 220.0}]},
+        {"period": 3, "quantity": 300.0, "pegged_to": [{"parent_item": "SA-2", "parent_period": 4, "qty": 300.0}]}
+      ]
+    }
+  }
+}
+

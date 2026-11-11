@@ -1,0 +1,26 @@
+item_id,description,type,unit_of_measure,standard_cost,shelf_life_days,lot_sizing_rule,safety_stock,lead_time_days,supplier_id
+FG-01,Industrial Robot Arm (Alpha),finished_good,EA,550.0,,L4L,25.0,7,
+FG-02,Precision Actuator Module (Beta),finished_good,EA,420.0,,L4L,30.0,7,
+FG-03,Conveyor Drive Unit (Gamma),finished_good,EA,610.0,,L4L,20.0,7,
+FG-04,Automated Feeder Unit (Delta),finished_good,EA,380.0,,L4L,15.0,7,
+FG-05,Smart Sensor Hub (Epsilon),finished_good,EA,290.0,,EOQ,35.0,7,
+SA-01,Servo Motor Core Assembly,subassembly,EA,140.0,,L4L,20.0,7,
+SA-02,Planetary Gearbox Reducer,subassembly,EA,115.0,,POQ,15.0,7,
+SA-03,Structural Robotic Joint Frame,subassembly,EA,85.0,,L4L,10.0,7,
+SA-04,Microcontroller Circuit Board Assembly,subassembly,EA,95.0,,WAGNER_WHITIN,25.0,7,
+SA-05,Linear Motion Carriage,subassembly,EA,75.0,,EOQ,15.0,7,
+SA-06,Heavy-Duty Base Mounting Plate,subassembly,EA,65.0,,POQ,10.0,7,
+SA-07,Power Inverter & Filter Unit,subassembly,EA,105.0,,L4L,20.0,7,
+SA-08,Multi-Channel Optical Sensor Array,subassembly,EA,80.0,,SILVER_MEAL,15.0,7,
+RM-01,CNC Machined Alloy Rod 6061,raw_material,KG,18.0,,EOQ,100.0,7,SUP-01
+RM-02,High-Grade Stainless Steel Plate,raw_material,KG,22.0,,EOQ,80.0,7,SUP-01
+RM-03,Hardened Steel Ball Bearings Pack,raw_material,EA,8.5,,POQ,150.0,7,SUP-01
+RM-04,SMD Microcontroller IC Chip,raw_material,EA,28.0,,EOQ,120.0,14,SUP-02
+RM-05,Power MOSFET Module,raw_material,EA,14.0,,POQ,90.0,14,SUP-02
+RM-06,Multi-Layer Ceramic Capacitors Reel,raw_material,EA,4.5,,EOQ,250.0,14,SUP-02
+RM-07,Engineering Thermoplastic Housing Resin,raw_material,KG,9.0,365.0,EOQ,140.0,5,SUP-03
+RM-08,Precision Fastener Kit (M4/M6 Bolts),raw_material,EA,2.5,,EOQ,300.0,5,SUP-03
+RM-09,EPDM Rubber Sealing Gaskets,raw_material,EA,3.8,730.0,POQ,100.0,5,SUP-03
+RM-10,Industrial Copper Magnet Wire,raw_material,KG,16.5,,EOQ,70.0,10,SUP-04
+RM-11,Neodymium Rotor Magnets,raw_material,EA,19.5,,POQ,60.0,10,SUP-04
+RM-12,Silicone Thermal Conductive Paste,raw_material,KG,11.0,180.0,L4L,40.0,10,SUP-04

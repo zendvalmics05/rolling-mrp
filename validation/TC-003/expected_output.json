@@ -1,0 +1,152 @@
+{
+  "test_case_id": "TC-003",
+  "name": "Lot Sizing Benchmark (L4L vs EOQ vs Wagner-Whitin)",
+  "num_periods": 8,
+  "items": {
+    "ITEM-01": {
+      "setup_cost": 100.0,
+      "holding_cost_per_period": 2.0,
+      "demands": [50, 60, 90, 70, 30, 100, 60, 40],
+      "l4l": {
+        "orders": [50, 60, 90, 70, 30, 100, 60, 40],
+        "setup_cost": 800.0,
+        "holding_cost": 0.0,
+        "total_cost": 800.0
+      },
+      "wagner_whitin": {
+        "orders": [50, 60, 90, 100, 0, 100, 100, 0],
+        "setup_cost": 600.0,
+        "holding_cost": 140.0,
+        "total_cost": 740.0
+      },
+      "cost_savings_pct": 7.5
+    },
+    "ITEM-02": {
+      "setup_cost": 150.0,
+      "holding_cost_per_period": 1.5,
+      "demands": [20, 25, 30, 40, 35, 50, 45, 60],
+      "l4l": {
+        "orders": [20, 25, 30, 40, 35, 50, 45, 60],
+        "setup_cost": 1200.0,
+        "holding_cost": 0.0,
+        "total_cost": 1200.0
+      },
+      "wagner_whitin": {
+        "orders": [75, 0, 0, 75, 0, 95, 0, 60],
+        "setup_cost": 600.0,
+        "holding_cost": 247.5,
+        "total_cost": 847.5
+      },
+      "cost_savings_pct": 29.38
+    },
+    "ITEM-03": {
+      "setup_cost": 80.0,
+      "holding_cost_per_period": 3.0,
+      "demands": [100, 120, 80, 90, 110, 130, 100, 70],
+      "l4l": {
+        "orders": [100, 120, 80, 90, 110, 130, 100, 70],
+        "setup_cost": 640.0,
+        "holding_cost": 0.0,
+        "total_cost": 640.0
+      },
+      "wagner_whitin": {
+        "orders": [100, 120, 80, 90, 110, 130, 100, 70],
+        "setup_cost": 640.0,
+        "holding_cost": 0.0,
+        "total_cost": 640.0
+      },
+      "cost_savings_pct": 0.0
+    },
+    "ITEM-04": {
+      "setup_cost": 200.0,
+      "holding_cost_per_period": 1.0,
+      "demands": [10, 15, 10, 25, 20, 30, 25, 40],
+      "l4l": {
+        "orders": [10, 15, 10, 25, 20, 30, 25, 40],
+        "setup_cost": 1600.0,
+        "holding_cost": 0.0,
+        "total_cost": 1600.0
+      },
+      "wagner_whitin": {
+        "orders": [80, 0, 0, 0, 0, 95, 0, 0],
+        "setup_cost": 400.0,
+        "holding_cost": 295.0,
+        "total_cost": 695.0
+      },
+      "cost_savings_pct": 56.56
+    },
+    "ITEM-05": {
+      "setup_cost": 50.0,
+      "holding_cost_per_period": 4.0,
+      "demands": [40, 50, 60, 45, 55, 65, 50, 60],
+      "l4l": {
+        "orders": [40, 50, 60, 45, 55, 65, 50, 60],
+        "setup_cost": 400.0,
+        "holding_cost": 0.0,
+        "total_cost": 400.0
+      },
+      "wagner_whitin": {
+        "orders": [40, 50, 60, 45, 55, 65, 50, 60],
+        "setup_cost": 400.0,
+        "holding_cost": 0.0,
+        "total_cost": 400.0
+      },
+      "cost_savings_pct": 0.0
+    },
+    "ITEM-06": {
+      "setup_cost": 120.0,
+      "holding_cost_per_period": 2.5,
+      "demands": [30, 0, 45, 0, 60, 0, 75, 50],
+      "l4l": {
+        "orders": [30, 0, 45, 0, 60, 0, 75, 50],
+        "setup_cost": 600.0,
+        "holding_cost": 0.0,
+        "total_cost": 600.0
+      },
+      "wagner_whitin": {
+        "orders": [30, 0, 45, 0, 60, 0, 75, 50],
+        "setup_cost": 600.0,
+        "holding_cost": 0.0,
+        "total_cost": 600.0
+      },
+      "cost_savings_pct": 0.0
+    },
+    "ITEM-07": {
+      "setup_cost": 90.0,
+      "holding_cost_per_period": 1.8,
+      "demands": [70, 80, 60, 90, 100, 80, 70, 90],
+      "l4l": {
+        "orders": [70, 80, 60, 90, 100, 80, 70, 90],
+        "setup_cost": 720.0,
+        "holding_cost": 0.0,
+        "total_cost": 720.0
+      },
+      "wagner_whitin": {
+        "orders": [70, 80, 60, 90, 100, 80, 70, 90],
+        "setup_cost": 720.0,
+        "holding_cost": 0.0,
+        "total_cost": 720.0
+      },
+      "cost_savings_pct": 0.0
+    },
+    "ITEM-08": {
+      "setup_cost": 180.0,
+      "holding_cost_per_period": 2.0,
+      "demands": [15, 20, 35, 25, 40, 30, 50, 45],
+      "l4l": {
+        "orders": [15, 20, 35, 25, 40, 30, 50, 45],
+        "setup_cost": 1440.0,
+        "holding_cost": 0.0,
+        "total_cost": 1440.0
+      },
+      "wagner_whitin": {
+        "orders": [35, 0, 60, 0, 70, 0, 95, 0],
+        "setup_cost": 720.0,
+        "holding_cost": 240.0,
+        "total_cost": 960.0
+      },
+      "cost_savings_pct": 33.33
+    }
+  }
+}
+

@@ -1,0 +1,46 @@
+{
+  "test_case_id": "TC-004",
+  "name": "Rough Cut Capacity Planning (RCCP) & Leveling",
+  "work_centers": {
+    "WC-A": {"capacity_hours": 40.0},
+    "WC-B": {"capacity_hours": 30.0}
+  },
+  "unconstrained_plan": {
+    "production": {
+      "FG-X": [20, 30, 40, 10],
+      "FG-Y": [15, 25, 35, 10]
+    },
+    "load_hours": {
+      "WC-A": [28.0, 39.0, 50.0, 20.0],
+      "WC-B": [20.5, 29.5, 38.5, 14.0]
+    },
+    "utilization_pct": {
+      "WC-A": [70.0, 97.5, 125.0, 50.0],
+      "WC-B": [68.3, 98.3, 128.3, 46.7]
+    },
+    "overloaded_periods": [
+      {"period": 3, "work_center": "WC-A", "overload_hours": 10.0, "utilization_pct": 125.0},
+      {"period": 3, "work_center": "WC-B", "overload_hours": 8.5, "utilization_pct": 128.3}
+    ]
+  },
+  "leveled_plan": {
+    "production": {
+      "FG-X": [40, 30, 20, 10],
+      "FG-Y": [15, 26, 34, 10]
+    },
+    "prebuild_inventory": {
+      "FG-X": [20, 20, 0, 0],
+      "FG-Y": [0, 1, 0, 0]
+    },
+    "load_hours": {
+      "WC-A": [38.0, 39.6, 39.4, 20.0],
+      "WC-B": [28.5, 30.0, 30.0, 14.0]
+    },
+    "utilization_pct": {
+      "WC-A": [95.0, 99.0, 98.5, 50.0],
+      "WC-B": [95.0, 100.0, 100.0, 46.7]
+    },
+    "overloaded_periods": []
+  }
+}
+
