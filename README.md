@@ -339,11 +339,11 @@ This project is licensed under the MIT License.
 
 If you use ROLLINGMRP in academic research or industrial benchmarks, please cite:
 ```bibtex
-@software{rollingmrp2026,
-  author = {Zendvalmics Research Team},
+@software{rolling-mrp,
+  author = {Sagnik Bose},
   title = {ROLLINGMRP: A Closed-Loop Rolling-Horizon Material Requirements Planning System with Finite Capacity Leveling and Nervousness Damping},
   year = {2026},
-  url = {https://github.com/your-username/rolling-mrp}
+  url = {https://github.com/zendvalmics05/rolling-mrp}
 }
 ```
 
